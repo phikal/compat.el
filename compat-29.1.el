@@ -51,7 +51,7 @@ character.
 When shortening strings for display purposes,
 `truncate-string-to-width' is almost always a better alternative
 than this function."
-  :feature subr-x
+  :feature 'subr-x
   (unless (natnump length)
     (signal 'wrong-type-argument (list 'natnump length)))
   (if coding-system
